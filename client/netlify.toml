@@ -3,4 +3,4 @@
   publish = "build"          # Output directory for React
 
 [build.environment]
-  NODE_VERSION = "16"        # Node version to use for building the project
+  NODE_VERSION = "18"        # Node version to use for building the project
