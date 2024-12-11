@@ -1,27 +1,6 @@
 [build]
-  # The command that will be run to build your project
-  command = "npm run build"  # Replace with your build command (e.g., `yarn build` if using yarn)
-  
-  # The directory where the build output will be placed
-  publish = "build"  # For React apps, the build folder is where the production files are stored
+  command = "npm run build"  # Build your project with npm
+  publish = "build"          # Output directory for React
 
 [build.environment]
-  # Optional: specify Node.js version
-  NODE_VERSION = "16"  # Replace with the Node.js version you want Netlify to use
-
-[dev]
-  # Optional: you can configure local development settings here
-  command = "npm start"  # Command to run locally for development
-  port = 3000            # Port number for local server (default React uses 3000)
-
-[[redirects]]
-  # Optional: set up redirects if necessary
-  from = "/old-path"
-  to = "/new-path"
-  status = 301
-
-[[headers]]
-  # Optional: add headers for security or caching
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+  NODE_VERSION = "16"        # Node version to use for building the project
